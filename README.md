@@ -1,10 +1,10 @@
-# 🦙 Nano-Llama: A Compact LLaMA-2 Style Model (65M Parameters)
+# 🦙 Nano-Llama: A Compact LLaMA-2 Style Model (67M Parameters)
 
-Welcome to the official repository of **Nano-Llama**, a **65 million parameter** LLaMA-2-style language model trained from scratch on **110 million tokens** from the high-quality [FineWeb dataset](https://huggingface.co/datasets/HuggingFaceFW/fineweb).
+Welcome to the official repository of **Nano-Llama**, a **67 million parameter** LLaMA-2-style language model trained from scratch on **110 million tokens** from the high-quality [FineWeb dataset](https://huggingface.co/datasets/HuggingFaceFW/fineweb).
 
 This repo provides everything you need to:
 
-* Train the model from scratch
+* PreTrain the model from scratch
 * Run inference locally
 * Convert to Hugging Face format
 * Upload and share your model on the Hub
@@ -54,7 +54,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 | Component       | Value                    |
 | --------------- | ------------------------ |
 | Architecture    | LLaMA-2-style Transformer  |
-| Parameters      | 65 Million               |
+| Parameters      | 67 Million               |
 | Layers          | 6                        |
 | Hidden Size     | 768                      |
 | Attention Heads | 12                       |
@@ -74,7 +74,7 @@ cd Nano-Llama
 pip install click torch sentencepiece datasets wandb
 ```
 
-### 2. Train from Scratch
+### 2. PreTrain from Scratch
 
 ```bash
 python train.py \
@@ -154,7 +154,7 @@ This will:
 
 ## ⚠️ Limitations
 
-* **Small Size:** At 65M parameters, it can't match larger LLMs in performance.
+* **Small Size:** At 67M parameters, it can't match larger LLMs in performance.
 * **Repetition:** May produce repetitive or incoherent text.
 
 ---
