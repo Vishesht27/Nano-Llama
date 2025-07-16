@@ -2,6 +2,8 @@
 
 Welcome to the official repository of **Nano-Llama**, a **67 million parameter** LLaMA-2-style language model trained from scratch on **110 million tokens** from the high-quality [FineWeb dataset](https://huggingface.co/datasets/HuggingFaceFW/fineweb).
 
+Inspired from MiniLlama 
+
 This repo provides everything you need to:
 
 * PreTrain the model from scratch
@@ -13,6 +15,8 @@ This repo provides everything you need to:
 
 >  ⚠️ Note: This model was trained with limited data and parameters due to resource constraints. You are encouraged to experiment by increasing the number of parameters, training samples, or dataset size to improve performance.
 ---
+
+> 🙏 Acknowledgement: This project is inspired by [MiniLLaMA](https://github.com/akanyaani/miniLLAMA) by [Abhay Kumar](https://www.linkedin.com/in/akanyaani/).
 
 ## 🚀 Quickstart: Use the Model from Hugging Face
 
